@@ -1,4 +1,4 @@
-# 👟 Lura Tênis
+#  Lura Tênis
 
 > **Estilo, conforto e autenticidade em cada passo.**
 
@@ -10,7 +10,7 @@ Site institucional da **Lura Tênis**, uma loja dedicada a quem entende que um b
 
 ---
 
-## 📖 Sobre o Projeto
+##  Sobre o Projeto
 
 A **Lura Tênis** nasceu da paixão por moda, conforto e cultura urbana, com a missão de reunir em um só lugar modelos que traduzem atitude, estilo e qualidade. Cada par da vitrine é escolhido com carinho e atenção aos detalhes, do acabamento ao conforto do solado.
 
@@ -18,7 +18,7 @@ Este repositório contém o site institucional da loja, desenvolvido com HTML e 
 
 ---
 
-## 🚀 Funcionalidades
+##  Funcionalidades
 
 - ✅ Página inicial com modelos em destaque
 - ✅ Catálogo de produtos com preços e categorias
@@ -29,7 +29,7 @@ Este repositório contém o site institucional da loja, desenvolvido com HTML e 
 
 ---
 
-## 🗂️ Estrutura do Projeto
+##  Estrutura do Projeto
 tenis/
 │
 ├── index.html # Página inicial
@@ -46,7 +46,7 @@ tenis/
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+##  Tecnologias Utilizadas
 
 | Tecnologia | Descrição |
 |------------|-----------|
@@ -58,7 +58,7 @@ tenis/
 
 ---
 
-## 📦 Produtos Disponíveis
+##  Produtos Disponíveis
 
 | Código | Nome | Categoria | Preço |
 |--------|------|-----------|-------|
