@@ -30,7 +30,7 @@ Este repositório contém o site institucional da loja, desenvolvido com HTML e 
 ---
 
 ##  Estrutura do Projeto
-tenis/
+Tenis/
 │
 ├── index.html # Página inicial
 ├── produtos.html # Catálogo de produtos
