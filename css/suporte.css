@@ -1,0 +1,135 @@
+
+/* LURA TÊNIS — SUPORTE */
+
+/* FORMULÁRIO */
+
+form {
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto 35px;
+    padding: 38px;
+    background: var(--grafite);
+    border: 1px solid var(--borda);
+    border-radius: var(--raio);
+    box-shadow: var(--sombra);
+}
+
+form br {
+    display: none;
+}
+
+label {
+    display: block;
+    margin: 22px 0 0;
+    color: var(--branco);
+    font-size: .85rem;
+    font-weight: 700;
+    letter-spacing: .07em;
+    text-transform: uppercase;
+}
+
+form > label:first-child {
+    margin-top: 0;
+}
+
+/* CAMPOS */
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    display: block;
+    width: 100%;
+    margin-top: 9px;
+    padding: 15px 16px;
+    background: #0c0c0c;
+    color: var(--branco);
+    border: 1px solid var(--borda);
+    border-radius: 10px;
+    font: inherit;
+    transition: border-color var(--transicao),
+                box-shadow var(--transicao);
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #777;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--destaque);
+    box-shadow: 0 0 0 3px rgba(198,255,0,.15);
+}
+
+textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
+option {
+    background: var(--grafite);
+    color: var(--branco);
+}
+
+/* CHECKBOX */
+
+input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    margin: 24px 10px 0 0;
+    accent-color: var(--destaque);
+    vertical-align: middle;
+}
+
+input[type="checkbox"] + label {
+    display: inline;
+    margin: 0;
+    color: var(--texto-suave);
+    font-size: .95rem;
+    font-weight: 500;
+    letter-spacing: 0;
+    text-transform: none;
+}
+
+/* BOTÃO ENVIAR */
+
+input[type="submit"] {
+    display: block;
+    width: 100%;
+    margin-top: 30px;
+    padding: 16px;
+    background: var(--destaque);
+    color: var(--preto);
+    border: 0;
+    border-radius: 999px;
+    font-family: var(--fonte-titulo);
+    font-size: 1.5rem;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background var(--transicao),
+                transform var(--transicao),
+                box-shadow var(--transicao);
+}
+
+input[type="submit"]:hover {
+    transform: translateY(-3px);
+    background: var(--destaque-hover);
+    box-shadow: var(--sombra-neon);
+}
+
+input[type="submit"]:active {
+    transform: scale(.98);
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 480px) {
+    form {
+        padding: 20px 16px;
+    }
+}

@@ -1,0 +1,36 @@
+
+/* LURA TÊNIS — SOBRE */
+
+/* VÍDEOS */
+
+iframe {
+    display: block;
+    width: 100%;
+    max-width: 760px;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    margin: 15px 0 25px;
+    border: 1px solid var(--borda);
+    border-radius: var(--raio);
+    box-shadow: var(--sombra);
+}
+
+/* IMAGENS INSTITUCIONAIS */
+
+section img {
+    transition: transform var(--transicao),
+                box-shadow var(--transicao);
+}
+
+section img:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--sombra-neon);
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 768px) {
+    iframe {
+        width: 100%;
+    }
+}

@@ -1,0 +1,129 @@
+
+/* LURA TÊNIS — INDEX */
+
+/* DESTAQUE PRINCIPAL */
+
+main > section:first-of-type {
+    background:
+        radial-gradient(circle at top right, rgba(198,255,0,.12), transparent 55%),
+        var(--grafite);
+    border-color: rgba(198,255,0,.2);
+}
+
+main > section:first-of-type p:first-of-type {
+    font-size: 1.1rem;
+    color: var(--branco);
+}
+
+/* VITRINE */
+
+table[border] {
+    width: 100%;
+    border: 0;
+    border-collapse: separate;
+    border-spacing: 12px 0;
+    margin: 10px -12px 0;
+}
+
+table[border] th {
+    padding: 18px 12px;
+    background: var(--cinza-claro);
+    color: var(--destaque);
+    border: 0;
+    border-bottom: 3px solid var(--destaque);
+    border-radius: 12px 12px 0 0;
+    font-family: var(--fonte-titulo);
+    font-size: 1.3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+table[border] td {
+    padding: 22px 12px;
+    background: #f5f5f5;
+    border: 0;
+    border-radius: 0 0 12px 12px;
+    text-align: center;
+    overflow: hidden;
+}
+
+table[border] td img {
+    width: 100%;
+    max-width: 220px;
+    margin: auto;
+    border-radius: 0;
+    transition: transform .4s ease;
+}
+
+table[border] td:hover img {
+    transform: scale(1.08) rotate(-3deg);
+}
+
+/* BANNERS */
+
+section > img {
+    display: inline-block;
+    width: auto;
+    max-width: 100%;
+    margin: 10px 15px 15px 0;
+    border: 1px solid var(--borda);
+    box-shadow: var(--sombra);
+    transition: transform var(--transicao),
+                box-shadow var(--transicao);
+}
+
+section > img:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--sombra-neon);
+}
+
+/* MARCAS */
+
+section ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+section li a {
+    display: inline-block;
+    padding: 12px 28px;
+    border: 2px solid var(--destaque);
+    border-radius: 999px;
+    color: var(--destaque);
+    font-size: .9rem;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: var(--transicao);
+}
+
+section li a:hover {
+    transform: translateY(-3px);
+    background: var(--destaque);
+    color: var(--preto);
+    box-shadow: var(--sombra-neon);
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 768px) {
+    table[border] {
+        display: block;
+        max-width: 100%;
+        overflow-x: auto;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    table[border] td img {
+        min-width: 140px;
+    }
+
+    section > img {
+        margin-right: 5px;
+    }
+}
