@@ -28,8 +28,6 @@ A **Lura Tênis** é uma loja fictícia de calçados esportivos e urbanos. O sit
 
 ---
 
-##  Estrutura de Arquivos
-
 ```text
 lura-tenis/
 ├── imagens/                  # Assets visuais (formato WebP)
