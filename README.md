@@ -1,73 +1,53 @@
-#  Lura Tênis
+# 👟 Lura Tênis
 
-> **Estilo, conforto e autenticidade em cada passo.**
-
-Site institucional da **Lura Tênis**, uma loja dedicada a quem entende que um bom par de tênis vai muito além de um simples acessório — ele expressa personalidade, acompanha a rotina e completa o visual de quem o usa.
-
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
-[![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=flat&logo=visualstudiocode&logoColor=white)](https://code.visualstudio.com/)
-
+> Site institucional estático de uma loja de tênis, desenvolvido com **HTML5** e **CSS3 puro**. Identidade visual *dark* com detalhes em verde-neon, focado em estrutura semântica, CSS modularizado e responsividade.
 
 ---
 
-##  Sobre o Projeto
+## 📑 Sobre o Projeto
 
-A **Lura Tênis** nasceu da paixão por moda, conforto e cultura urbana, com a missão de reunir em um só lugar modelos que traduzem atitude, estilo e qualidade. Cada par da vitrine é escolhido com carinho e atenção aos detalhes, do acabamento ao conforto do solado.
+A **Lura Tênis** é uma loja fictícia de calçados esportivos e urbanos. O site apresenta a marca, exibe uma vitrine de modelos em destaque, um catálogo com tabela de preços, conteúdo institucional com reviews em vídeo e um formulário de contato.
 
-Este repositório contém o site institucional da loja, desenvolvido com HTML e CSS puros, apresentando os produtos, a história da marca e canais de contato com os clientes.
-
----
-
-##  Funcionalidades
-
-- ✅ Página inicial com modelos em destaque
-- ✅ Catálogo de produtos com preços e categorias
-- ✅ Página institucional "Sobre nós"
-- ✅ Formulário de contato
-- ✅ Links para sites oficiais das marcas (Nike e Adidas)
-- ✅ Design responsivo e navegação intuitiva
+**Destaques técnicos:**
+- Variáveis CSS (`:root`) centralizando todo o tema (Design System).
+- CSS modularizado: um arquivo global + um arquivo específico por página.
+- Efeitos de *hover* com `transform` e `box-shadow`.
+- Layout fluido com `clamp()`, `min()` e `aspect-ratio`.
+- Suporte a `prefers-reduced-motion` para acessibilidade.
 
 ---
 
-##  Estrutura do Projeto
-Tenis/
+## 🛠 Tecnologias Utilizadas
+
+| Tecnologia | Uso |
+|---|---|
+| **HTML5** | Estrutura semântica (`header`, `nav`, `main`, `section`, `footer`, `table`, `form`) |
+| **CSS3** | Estilização, Flexbox, animações e media queries |
+| **Google Fonts** | `Bebas Neue` (títulos) e `Inter` (texto) |
+| **WebP** | Formato das imagens da vitrine para melhor compressão |
+
+---
+
+##  Estrutura de Arquivos
+
+```text
+lura-tenis/
+├── imagens/                  # Assets visuais (formato WebP)
+│   ├── nike.webp             # Nike Air Force Essential
+│   ├── nikerosa.webp         # Nike AT (Rosa)
+│   ├── adidasbranco.webp     # Adidas Adizero SL
+│   ── adidas.webp           # Adidas Adizero Evo SL
 │
-├── index.html # Página inicial
-├── produtos.html # Catálogo de produtos
-├── sobre.html # Sobre a loja
-├── suporte.html # Formulário de contato
-├── imagens/ # Pasta com as imagens dos tênis
-│ ├── nike.webp
-│ ├── nikerosa.webp
-│ ├── adidasbranco.webp
-│ └── adidas.webp
-└── README.md
-
-
----
-
-##  Tecnologias Utilizadas
-
-| Tecnologia | Descrição |
-|------------|-----------|
-| **Visual Studio Code** | Editor de código  |
-| **HTML5** | Estrutura semântica das páginas |
-| **CSS3** | Estilização e layout |
-| **Markdown** | Documentação do projeto |
-
-
----
-
-##  Produtos Disponíveis
-
-| Código | Nome | Categoria | Preço |
-|--------|------|-----------|-------|
-| LUR-001 | Nike Air Force Essential | Casual | R$ 499,99 |
-| LUR-002 | Nike AT | Basquete | R$ 399,99 |
-| LUR-003 | Adidas Adizero SL | Corrida | R$ 599,99 |
-| LUR-004 | Adidas Adizero Evo SL | Corrida | R$ 699,99 |
-| LUR-005 | Adidas Samba OG | Casual | R$ 649,99 |
-
----
+├── paginas/                  # Arquivos HTML (Views)
+│   ├── index.html            # Home: Vitrine, banners e links
+│   ├── produtos.html         # Catálogo: Tabela de preços
+│   ├── sobre.html            # Institucional: Quem somos + Reviews
+│   └── suporte.html          # Contato: Formulário completo
+│
+└── css/                      # Folhas de Estilo
+    ├── estilo.css            # Global: Reset, variáveis, tipografia, layout base
+    ├── index.css             # Home: Estilos da vitrine e banners
+    ├── produtos.css          # Produtos: Estilização da tabela de catálogo
+    ├── sobre.css             # Sobre: Iframes de vídeo e imagens
+    └── suporte.css           # Suporte: Formulários, inputs e botões
 
