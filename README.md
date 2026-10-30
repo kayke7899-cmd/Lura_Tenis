@@ -23,7 +23,7 @@ A **Lura Tênis** é uma loja fictícia de calçados esportivos e urbanos. O sit
 |---|---|
 | **HTML5** | Estrutura semântica (`header`, `nav`, `main`, `section`, `footer`, `table`, `form`) |
 | **CSS3** | Estilização, Flexbox, animações e media queries |
-| **Google Fonts** | `Bebas Neue` (títulos) e `Inter` (texto) |
+| **Vs Code** | Editor de código  |
 | **WebP** | Formato das imagens da vitrine para melhor compressão |
 
 ---
